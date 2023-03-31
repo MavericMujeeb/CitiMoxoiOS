@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         self.window?.overrideUserInterfaceStyle = .light
-        
+        MEPClient.sharedInstance().setup(withDomain: "citiusdev03.moxo.com", linkConfig: nil)
         let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
         
         let acsChannel = FlutterMethodChannel(

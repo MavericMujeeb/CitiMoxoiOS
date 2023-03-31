@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MEPClientDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MEP </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Moxtra</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/client:didLeaveMessageForLiveChat:">- client:didLeaveMessageForLiveChat:</option>
+		
+		<option value="//api/name/client:didOpenChat:">- client:didOpenChat:</option>
+		
+		<option value="//api/name/client:didTapAddMemberInChat:">- client:didTapAddMemberInChat:</option>
+		
+		<option value="//api/name/client:didTapCall:withPeer:">- client:didTapCall:withPeer:</option>
+		
+		<option value="//api/name/client:didTapCallInChat:">- client:didTapCallInChat:</option>
+		
+		<option value="//api/name/client:didTapClose:">- client:didTapClose:</option>
+		
+		<option value="//api/name/client:didTapEditMeet:">- client:didTapEditMeet:</option>
+		
+		<option value="//api/name/client:didTapInviteInLiveMeet:">- client:didTapInviteInLiveMeet:</option>
+		
+		<option value="//api/name/client:didTapJoinMeet:">- client:didTapJoinMeet:</option>
+		
+		<option value="//api/name/client:didTapMeetNow:withPeer:">- client:didTapMeetNow:withPeer:</option>
+		
+		<option value="//api/name/client:didTapNewChat:">- client:didTapNewChat:</option>
+		
+		<option value="//api/name/client:didTapRemoveMemberInChat:withUser:">- client:didTapRemoveMemberInChat:withUser:</option>
+		
+		<option value="//api/name/client:didTapScheduleMeet:">- client:didTapScheduleMeet:</option>
+		
+		<option value="//api/name/client:didTapTransaction:">- client:didTapTransaction:</option>
+		
+		<option value="//api/name/client:didTapViewMeet:">- client:didTapViewMeet:</option>
+		
+		<option value="//api/name/client:didUpdateUnreadCount:">- client:didUpdateUnreadCount:</option>
+		
+		<option value="//api/name/client:handleResendingInvitationWithChat:relationID:">- client:handleResendingInvitationWithChat:relationID:</option>
+		
+		<option value="//api/name/client:liveChatsDidUpdated:">- client:liveChatsDidUpdated:</option>
+		
+		<option value="//api/name/client:meet:didHostChange:">- client:meet:didHostChange:</option>
+		
+		<option value="//api/name/client:meetDidEnd:isMissCall:">- client:meetDidEnd:isMissCall:</option>
+		
+		<option value="//api/name/client:willSubmitEsign:fromViewController:completionHandler:">- client:willSubmitEsign:fromViewController:completionHandler:</option>
+		
+		<option value="//api/name/clientDidLogout:">- clientDidLogout:</option>
+		
+		<option value="//api/name/clientDidReceiveUpgradeRecommend:">- clientDidReceiveUpgradeRecommend:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MEPClientDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MEPClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The MEPClientDelegate protocol defines methods that are called by the client object in response to important events in the lifetime of your client.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/client:didUpdateUnreadCount:" title="client:didUpdateUnreadCount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didUpdateUnreadCount:">&ndash;&nbsp;client:didUpdateUnreadCount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemented will trigger when unread count changes</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didUpdateUnreadCount:(NSUInteger)<em>unreadCount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>unreadCount</code></th>
+						<td><p>Count after updated</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapClose:" title="client:didTapClose:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapClose:">&ndash;&nbsp;client:didTapClose:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger when user clicks close button. Usually to take actions like unlink or hide the screen etc</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapClose:(id _Nullable)<em>sender</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sender</code></th>
+						<td><p>The ui element where trigger this event</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapNewChat:" title="client:didTapNewChat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapNewChat:">&ndash;&nbsp;client:didTapNewChat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger when user clicks new chat button. Usually to let 3rd party to create chat by self.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapNewChat:(id _Nullable)<em>sender</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sender</code></th>
+						<td><p>The ui element where trigger this event</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:meetDidEnd:isMissCall:" title="client:meetDidEnd:isMissCall:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:meetDidEnd:isMissCall:">&ndash;&nbsp;client:meetDidEnd:isMissCall:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger when a meet ended</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> meetDidEnd:(NSString *)<em>meetID</em> isMissCall:(BOOL)<em>isMissCall</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meetID</code></th>
+						<td><p>The call&rsquo;s id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isMissCall</code></th>
+						<td><p>YES means miss call, otherwise not missed call.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapTransaction:" title="client:didTapTransaction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapTransaction:">&ndash;&nbsp;client:didTapTransaction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger when user tap transaction button</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapTransaction:(MEPTransaction *)<em>transaction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>transaction</code></th>
+						<td><p>The transaction tapped</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party need call unlink or localUnlink to logout if implemeted this callback, otherwise we will call unlink by default.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clientDidLogout:" title="clientDidLogout:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clientDidLogout:">&ndash;&nbsp;clientDidLogout:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger when current account did logout</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clientDidLogout:(MEPClient *)<em>client</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party need call unlink or localUnlink to logout if implemeted this callback, otherwise we will call unlink by default.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clientDidReceiveUpgradeRecommend:" title="clientDidReceiveUpgradeRecommend:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clientDidReceiveUpgradeRecommend:">&ndash;&nbsp;clientDidReceiveUpgradeRecommend:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger when received upgrade recommend from server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clientDidReceiveUpgradeRecommend:(MEPClient *)<em>client</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party can handle the upgrade recommend if implemeted this callback, otherwise we will popup alert UI by default.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapAddMemberInChat:" title="client:didTapAddMemberInChat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapAddMemberInChat:">&ndash;&nbsp;client:didTapAddMemberInChat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger when tap add member in chat setting.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapAddMemberInChat:(NSString *)<em>chatID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chatID</code></th>
+						<td><p>The chat&rsquo;s id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party can overtake this action if implemeted this callback and use restApi to add if need.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapRemoveMemberInChat:withUser:" title="client:didTapRemoveMemberInChat:withUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapRemoveMemberInChat:withUser:">&ndash;&nbsp;client:didTapRemoveMemberInChat:withUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger when tap remove member in chat setting.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapRemoveMemberInChat:(NSString *)<em>chatID</em> withUser:(MEPUser *)<em>userToRemove</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chatID</code></th>
+						<td><p>The chat&rsquo;s id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userToRemove</code></th>
+						<td><p>the user to be removed</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party can overtake this action if implemeted this callback, and use restApi to remove if need.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didOpenChat:" title="client:didOpenChat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didOpenChat:">&ndash;&nbsp;client:didOpenChat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger notify when user open chat.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didOpenChat:(MEPChat *)<em>chat</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chat</code></th>
+						<td><p>The chat</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party fetch properties from chat if need</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapCallInChat:" title="client:didTapCallInChat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapCallInChat:">&ndash;&nbsp;client:didTapCallInChat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger notify when user tap call inside chat.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapCallInChat:(MEPChat *)<em>chat</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chat</code></th>
+						<td><p>The chat</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party fetch properties from chat if need</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapCall:withPeer:" title="client:didTapCall:withPeer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapCall:withPeer:">&ndash;&nbsp;client:didTapCall:withPeer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger notify when user tap call inside chat/contact profile/calendar, etc.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapCall:(MEPChat *_Nullable)<em>chat</em> withPeer:(MEPUser *_Nullable)<em>peerOrNil</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chat</code></th>
+						<td><p>The chat if tap call button inside chat</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peerOrNil</code></th>
+						<td><p>The related user you want to make call.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>if chat is null, it means this action happened not inside chat, maybe calendar, contact profile. Chat is conflict with peer,  If you want to fetch chat members, pls refer class <a href="../Classes/MEPChat.html">MEPChat</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapMeetNow:withPeer:" title="client:didTapMeetNow:withPeer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapMeetNow:withPeer:">&ndash;&nbsp;client:didTapMeetNow:withPeer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger notify when user tap start meeting from tabbar/calendar/chat/contact profile
+/</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapMeetNow:(MEPChat *_Nullable)<em>chatOrNil</em> withPeer:(MEPUser *_Nullable)<em>peerOrNil</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chat</code></th>
+						<td><p>The chat if tap call button from chat</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peer</code></th>
+						<td><p>The user if tap call button from contact profile</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>if chat is null, it means this action happened outside of a chat, happens in calendar or contact profile. Argument chat is conflict with argument peer, they won&rsquo;t have value in same time. If you want to fetch chat members, pls refer class <a href="../Classes/MEPChat.html">MEPChat</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapScheduleMeet:" title="client:didTapScheduleMeet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapScheduleMeet:">&ndash;&nbsp;client:didTapScheduleMeet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger notify when user tap schedule meeting from tabbar/calendar/chat
+/</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapScheduleMeet:(MEPChat *_Nullable)<em>chatOrNil</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chat</code></th>
+						<td><p>The chat if tap call button from chat</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>if chat is null, it means this action happened outside of a chat, happens in calendar.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapJoinMeet:" title="client:didTapJoinMeet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapJoinMeet:">&ndash;&nbsp;client:didTapJoinMeet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger notify when user tap join meet.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapJoinMeet:(MEPMeet *)<em>meet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meet</code></th>
+						<td><p>The meet to join</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party fetch properties from meet if need. And 3rd party can use joinMeet* related apis to join meet.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapViewMeet:" title="client:didTapViewMeet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapViewMeet:">&ndash;&nbsp;client:didTapViewMeet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger notify when user tap view meet.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapViewMeet:(MEPMeet *)<em>meet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meet</code></th>
+						<td><p>The meet</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party fetch properties from meet if need</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapEditMeet:" title="client:didTapEditMeet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapEditMeet:">&ndash;&nbsp;client:didTapEditMeet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemeted will trigger notify when user tap edit meet.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapEditMeet:(MEPMeet *)<em>meet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meet</code></th>
+						<td><p>The meet</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>3rd party fetch properties from meet if need</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:handleResendingInvitationWithChat:relationID:" title="client:handleResendingInvitationWithChat:relationID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:handleResendingInvitationWithChat:relationID:">&ndash;&nbsp;client:handleResendingInvitationWithChat:relationID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this callback to handle resending invitation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> handleResendingInvitationWithChat:(nullable MEPChat *)<em>chat</em> relationID:(UInt64)<em>relationID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chat</code></th>
+						<td><p>The chat. See <a href="../Classes/MEPChat.html">MEPChat</a> for detail.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>relationID</code></th>
+						<td><p>Relation ID.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didTapInviteInLiveMeet:" title="client:didTapInviteInLiveMeet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didTapInviteInLiveMeet:">&ndash;&nbsp;client:didTapInviteInLiveMeet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemented will trigger notify when user tap invite button in meet panel.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didTapInviteInLiveMeet:(MEPMeet *)<em>meet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meet</code></th>
+						<td><p>The meet which is on going</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invite button in a live meet panel can only show up when this callback implemented. 3rd party can fetch properties from meet if need.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:meet:didHostChange:" title="client:meet:didHostChange:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:meet:didHostChange:">&ndash;&nbsp;client:meet:didHostChange:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemented will trigger notify when host switched in meet.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> meet:(MEPMeet *)<em>meet</em> didHostChange:(MEPParticipant *)<em>newHost</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meet</code></th>
+						<td><p>The meet which changed host</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newHost</code></th>
+						<td><p>The new host switched to</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:liveChatsDidUpdated:" title="client:liveChatsDidUpdated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:liveChatsDidUpdated:">&ndash;&nbsp;client:liveChatsDidUpdated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemented will trigger notify when live chat updated</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> liveChatsDidUpdated:(NSArray&lt;MEPLiveChat*&gt; *)<em>updatedLiveChats</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>updatedLiveChats</code></th>
+						<td><p>Updated live chats</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Only name or status changed will fire this callback, others like message updated won&rsquo;t fire the callback.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:didLeaveMessageForLiveChat:" title="client:didLeaveMessageForLiveChat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:didLeaveMessageForLiveChat:">&ndash;&nbsp;client:didLeaveMessageForLiveChat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemented will trigger notify when external user left a message in live chat</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> didLeaveMessageForLiveChat:(MEPLeaveMessageData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>Refer <a href="../Classes/MEPLeaveMessageData.html">MEPLeaveMessageData</a> for more</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:willSubmitEsign:fromViewController:completionHandler:" title="client:willSubmitEsign:fromViewController:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:willSubmitEsign:fromViewController:completionHandler:">&ndash;&nbsp;client:willSubmitEsign:fromViewController:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If implemented will trigger notify when user going to submit a e-sign</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(MEPClient *)<em>client</em> willSubmitEsign:(NSString *__nullable)<em>payload</em> fromViewController:(UIViewController *)<em>viewController</em> completionHandler:(void ( ^ _Nullable ) ( BOOL pass , NSString *__nullable jwt ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The mep sdk client</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>payload</code></th>
+						<td><p>The payload of this e-sign submit action</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>viewController</code></th>
+						<td><p>From which view controller this action happens</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object which should be called when you decide user can submit this e-sign or not.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This completionHandler block is required to be called immediately after your process done. First parameters is boolean, to indicate if SDK should submit esign, for example, per 2FA case, once completed the authentication, you should call pass &lsquo;YES&rsquo; to first parameter.
+Second parameter is optional JWT,to provide security check per esign .</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2023 Moxtra. All rights reserved. Updated: 2023-03-21</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

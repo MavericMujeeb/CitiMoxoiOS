@@ -1,0 +1,2729 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MEPClient Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MEP </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Moxtra</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/changeLanguage:">- changeLanguage:</option>
+		
+		<option value="//api/name/createChatViewControllerWithChatID:">- createChatViewControllerWithChatID:</option>
+		
+		<option value="//api/name/createDashboardViewController">- createDashboardViewController</option>
+		
+		<option value="//api/name/createLiveChatController">- createLiveChatController</option>
+		
+		<option value="//api/name/createNewChatWithCompletionHandler:">- createNewChatWithCompletionHandler:</option>
+		
+		<option value="//api/name/createServiceRequestController">- createServiceRequestController</option>
+		
+		<option value="//api/name/createTimelineViewController">- createTimelineViewController</option>
+		
+		<option value="//api/name/createTimelineViewController:">- createTimelineViewController:</option>
+		
+		<option value="//api/name/dismissMEPWindow">- dismissMEPWindow</option>
+		
+		<option value="//api/name/fetchMeetWithMeetID:withCompletion:">- fetchMeetWithMeetID:withCompletion:</option>
+		
+		<option value="//api/name/getTopViewController">- getTopViewController</option>
+		
+		<option value="//api/name/getUnreadMessageCount">- getUnreadMessageCount</option>
+		
+		<option value="//api/name/getUnreadMessageCountWithType:">- getUnreadMessageCountWithType:</option>
+		
+		<option value="//api/name/handleCallKitUserActivity:">- handleCallKitUserActivity:</option>
+		
+		<option value="//api/name/hideMEPWindow">- hideMEPWindow</option>
+		
+		<option value="//api/name/inviteClientWithCompletionHandler:">- inviteClientWithCompletionHandler:</option>
+		
+		<option value="//api/name/inviteInternalWithCompletionHandler:">- inviteInternalWithCompletionHandler:</option>
+		
+		<option value="//api/name/isBadgeNotification:">- isBadgeNotification:</option>
+		
+		<option value="//api/name/isLinked">- isLinked</option>
+		
+		<option value="//api/name/isMEPNotification:">- isMEPNotification:</option>
+		
+		<option value="//api/name/joinMeetAnonymouslyWithMeetID:displayName:completionHandler:">- joinMeetAnonymouslyWithMeetID:displayName:completionHandler:</option>
+		
+		<option value="//api/name/joinMeetAnonymouslyWithMeetID:displayName:email:completionHandler:">- joinMeetAnonymouslyWithMeetID:displayName:email:completionHandler:</option>
+		
+		<option value="//api/name/joinMeetAnonymouslyWithMeetID:password:displayName:email:completionHandler:">- joinMeetAnonymouslyWithMeetID:password:displayName:email:completionHandler:</option>
+		
+		<option value="//api/name/joinMeetWithMeetID:completionHandler:">- joinMeetWithMeetID:completionHandler:</option>
+		
+		<option value="//api/name/joinMeetWithMeetID:password:completionHandler:">- joinMeetWithMeetID:password:completionHandler:</option>
+		
+		<option value="//api/name/linkUserWithAccessToken:completionHandler:">- linkUserWithAccessToken:completionHandler:</option>
+		
+		<option value="//api/name/localUnlink">- localUnlink</option>
+		
+		<option value="//api/name/openChat:withFeedSequence:completionHandler:">- openChat:withFeedSequence:completionHandler:</option>
+		
+		<option value="//api/name/openLiveChatWithChannelId:message:completion:">- openLiveChatWithChannelId:message:completion:</option>
+		
+		<option value="//api/name/openLiveChatWithCompletion:">- openLiveChatWithCompletion:</option>
+		
+		<option value="//api/name/openRelationChatWithEmail:completionHandler:">- openRelationChatWithEmail:completionHandler:</option>
+		
+		<option value="//api/name/openRelationChatWithUniqueID:completionHandler:">- openRelationChatWithUniqueID:completionHandler:</option>
+		
+		<option value="//api/name/openServiceReqeustWithCompletion:">- openServiceReqeustWithCompletion:</option>
+		
+		<option value="//api/name/openTransaction:withTransactionId:completion:">- openTransaction:withTransactionId:completion:</option>
+		
+		<option value="//api/name/parseRemoteNotification:completionHandler:">- parseRemoteNotification:completionHandler:</option>
+		
+		<option value="//api/name/registerNotificationWithCustomizedToken:">- registerNotificationWithCustomizedToken:</option>
+		
+		<option value="//api/name/registerNotificationWithDeviceToken:">- registerNotificationWithDeviceToken:</option>
+		
+		<option value="//api/name/registerNotificationWithDeviceToken:completionHandler:">- registerNotificationWithDeviceToken:completionHandler:</option>
+		
+		<option value="//api/name/scheduleMeetWithOption:completionHandler:">- scheduleMeetWithOption:completionHandler:</option>
+		
+		<option value="//api/name/setupWithDomain:linkConfig:">- setupWithDomain:linkConfig:</option>
+		
+		<option value="//api/name/showMEPWindow">- showMEPWindow</option>
+		
+		<option value="//api/name/showMEPWindowLite">- showMEPWindowLite</option>
+		
+		<option value="//api/name/startMeetWithOption:completionHandler:">- startMeetWithOption:completionHandler:</option>
+		
+		<option value="//api/name/unlink">- unlink</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MEPClient Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MEPClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The MEPClient class provides interfaces for user authentication and UI operations.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nonnull instancetype)sharedInstance</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setupWithDomain:linkConfig:" title="setupWithDomain:linkConfig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setupWithDomain:linkConfig:">&ndash;&nbsp;setupWithDomain:linkConfig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set up domain before link</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setupWithDomain:(NSString *)<em>baseDomain</em> linkConfig:(MEPLinkConfig *_Nullable)<em>linkConfig</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>baseDomain</code></th>
+						<td><p>The server domain url. There are 2 basedomains you might to use:
+                 &ldquo;www.moxtra.com&rdquo;  for production environment,
+                 &ldquo;sandbox.moxtra.com&rdquo; for sanbox environment
+                 During development, you will point your app at Moxtra&rsquo;s &ldquo;sandbox&rdquo; development environment. Set the base domain to &lsquo;production&rsquo; when pointing your app to production environment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>linkConfig</code></th>
+						<td><p>The optional link configuration.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkUserWithAccessToken:completionHandler:" title="linkUserWithAccessToken:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUserWithAccessToken:completionHandler:">&ndash;&nbsp;linkUserWithAccessToken:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize MEP with access token</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)linkUserWithAccessToken:(nonnull NSString *)<em>accessToken</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessToken</code></th>
+						<td><p>Access token used for authentication</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unlink" title="unlink"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unlink">&ndash;&nbsp;unlink</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unlink MEP along with disable notification</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unlink</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localUnlink" title="localUnlink"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localUnlink">&ndash;&nbsp;localUnlink</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unlink MEP without disable notification</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)localUnlink</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLinked" title="isLinked"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLinked">&ndash;&nbsp;isLinked</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request MEP link state</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isLinked</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>If MEP is linked or not</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUnreadMessageCount" title="getUnreadMessageCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnreadMessageCount">&ndash;&nbsp;getUnreadMessageCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request count of unread messages</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSUInteger)getUnreadMessageCount</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The count of unread messages</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUnreadMessageCountWithType:" title="getUnreadMessageCountWithType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnreadMessageCountWithType:">&ndash;&nbsp;getUnreadMessageCountWithType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request count of unread messages with specific type</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSUInteger)getUnreadMessageCountWithType:(MEPChatType)<em>type</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The count of unread messages</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This API only supports external users for type: MEPChatTypeLiveChat and MEPChatTypeServiceRequest yet.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="languageSwitch Methods" name="task_languageSwitch Methods"></a>
+						<h2 class="task-title">languageSwitch Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/changeLanguage:" title="changeLanguage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeLanguage:">&ndash;&nbsp;changeLanguage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Change language</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)changeLanguage:(NSString *_Nonnull)<em>language</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>Standard iso language code（ISO 639-1） to change language at runtime. ex. zh-Hant, zh-Hans, en etc</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Meet Methods" name="task_Meet Methods"></a>
+						<h2 class="task-title">Meet Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/joinMeetWithMeetID:completionHandler:" title="joinMeetWithMeetID:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/joinMeetWithMeetID:completionHandler:">&ndash;&nbsp;joinMeetWithMeetID:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Join meet with meet ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)joinMeetWithMeetID:(nonnull NSString *)<em>meetID</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meetID</code></th>
+						<td><p>meetID the you want to join</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Join meet with meet id when current account loggin.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/joinMeetWithMeetID:password:completionHandler:" title="joinMeetWithMeetID:password:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/joinMeetWithMeetID:password:completionHandler:">&ndash;&nbsp;joinMeetWithMeetID:password:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Join meet with meet ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)joinMeetWithMeetID:(nonnull NSString *)<em>meetID</em> password:(nonnull NSString *)<em>password</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meetID</code></th>
+						<td><p>meetID the you want to join</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>password for this meet</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Join meet with meet id when current account loggin.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/joinMeetAnonymouslyWithMeetID:displayName:completionHandler:" title="joinMeetAnonymouslyWithMeetID:displayName:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/joinMeetAnonymouslyWithMeetID:displayName:completionHandler:">&ndash;&nbsp;joinMeetAnonymouslyWithMeetID:displayName:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Join meet as anonymous with meet ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)joinMeetAnonymouslyWithMeetID:(nonnull NSString *)<em>meetID</em> displayName:(nonnull NSString *)<em>displayName</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meetID</code></th>
+						<td><p>meetID the you want to join</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>displayName</code></th>
+						<td><p>the name will display in meet</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Join meet with meet id when current no account logined.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/joinMeetAnonymouslyWithMeetID:displayName:email:completionHandler:" title="joinMeetAnonymouslyWithMeetID:displayName:email:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/joinMeetAnonymouslyWithMeetID:displayName:email:completionHandler:">&ndash;&nbsp;joinMeetAnonymouslyWithMeetID:displayName:email:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Join meet as anonymous with meet ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)joinMeetAnonymouslyWithMeetID:(nonnull NSString *)<em>meetID</em> displayName:(nonnull NSString *)<em>displayName</em> email:(nullable NSString *)<em>emailOrNil</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meetID</code></th>
+						<td><p>meetID the you want to join</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>displayName</code></th>
+						<td><p>the name will display in meet</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailOrNil</code></th>
+						<td><p>the email</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Join meet with meet id when current no account logined.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/joinMeetAnonymouslyWithMeetID:password:displayName:email:completionHandler:" title="joinMeetAnonymouslyWithMeetID:password:displayName:email:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/joinMeetAnonymouslyWithMeetID:password:displayName:email:completionHandler:">&ndash;&nbsp;joinMeetAnonymouslyWithMeetID:password:displayName:email:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Join meet as anonymous with meet ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)joinMeetAnonymouslyWithMeetID:(nonnull NSString *)<em>meetID</em> password:(nonnull NSString *)<em>password</em> displayName:(nonnull NSString *)<em>displayName</em> email:(nullable NSString *)<em>emailOrNil</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meetID</code></th>
+						<td><p>meetID the you want to join</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>password for this meet</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>displayName</code></th>
+						<td><p>the name will display in meet</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailOrNil</code></th>
+						<td><p>the email</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Join meet with meet id when current no account logined.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startMeetWithOption:completionHandler:" title="startMeetWithOption:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startMeetWithOption:completionHandler:">&ndash;&nbsp;startMeetWithOption:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>start meet with option</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startMeetWithOption:(nonnull MEPStartMeetOptions *)<em>meetOptions</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil , NSString *meetIDOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meetOptions</code></th>
+						<td><p>meet related option</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scheduleMeetWithOption:completionHandler:" title="scheduleMeetWithOption:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scheduleMeetWithOption:completionHandler:">&ndash;&nbsp;scheduleMeetWithOption:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>schedule meet with option</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scheduleMeetWithOption:(nonnull MEPScheduleMeetOptions *)<em>meetOptions</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil , NSString *meetIDOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meetOptions</code></th>
+						<td><p>meet related option</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchMeetWithMeetID:withCompletion:" title="fetchMeetWithMeetID:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchMeetWithMeetID:withCompletion:">&ndash;&nbsp;fetchMeetWithMeetID:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>fetch meet with meetID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchMeetWithMeetID:(NSString *__nonnull)<em>meetID</em> withCompletion:(void ( ^ ) ( NSError *_Nullable errorOrNil , MEPMeet *_Nullable meetOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meetID</code></th>
+						<td><p>meet id the you want fetch</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleCallKitUserActivity:" title="handleCallKitUserActivity:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleCallKitUserActivity:">&ndash;&nbsp;handleCallKitUserActivity:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>handle call activity</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)handleCallKitUserActivity:(NSUserActivity *)<em>callActivity</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callActivity</code></th>
+						<td><p>typical user activity from call history or call UI</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES means activity handled, otherwise NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="transaction Methods" name="task_transaction Methods"></a>
+						<h2 class="task-title">transaction Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/openTransaction:withTransactionId:completion:" title="openTransaction:withTransactionId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openTransaction:withTransactionId:completion:">&ndash;&nbsp;openTransaction:withTransactionId:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openTransaction:(NSString *)<em>chatId</em> withTransactionId:(NSUInteger)<em>transactionId</em> completion:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="ViewController Methods" name="task_ViewController Methods"></a>
+						<h2 class="task-title">ViewController Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getTopViewController" title="getTopViewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTopViewController">&ndash;&nbsp;getTopViewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return the top view controller can let 3rd party to present view controller</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable UIViewController *)getTopViewController</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the top view controller</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>maybe null, if not login or mepwindow not showing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createTimelineViewController:" title="createTimelineViewController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createTimelineViewController:">&ndash;&nbsp;createTimelineViewController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create timeline view controller.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable UIViewController *)createTimelineViewController:(BOOL)<em>enableTabs</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enableTabs</code></th>
+						<td><p>YES means have all/internal/external, otherwise not have.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the timeline view controller, not include navigation bar.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createTimelineViewController" title="createTimelineViewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createTimelineViewController">&ndash;&nbsp;createTimelineViewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create timeline view controller.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable UIViewController *)createTimelineViewController</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the timeline view controller, not include navigation bar.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createDashboardViewController" title="createDashboardViewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createDashboardViewController">&ndash;&nbsp;createDashboardViewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create dashboard controller.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable UIViewController *)createDashboardViewController</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the dashboard view controller, not include navigation bar.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createChatViewControllerWithChatID:" title="createChatViewControllerWithChatID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createChatViewControllerWithChatID:">&ndash;&nbsp;createChatViewControllerWithChatID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create chat view controller instance with specific chat id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIViewController *)createChatViewControllerWithChatID:(NSString *)<em>chatID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chatID</code></th>
+						<td><p>Id of the chat</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createLiveChatController" title="createLiveChatController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createLiveChatController">&ndash;&nbsp;createLiveChatController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create live chat list view controller, only supports external user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable UIViewController *)createLiveChatController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createServiceRequestController" title="createServiceRequestController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createServiceRequestController">&ndash;&nbsp;createServiceRequestController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create service reqeust list controller, only supports external user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable UIViewController *)createServiceRequestController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createNewChatWithCompletionHandler:" title="createNewChatWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createNewChatWithCompletionHandler:">&ndash;&nbsp;createNewChatWithCompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoke Moxtra new conversation flow</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable UINavigationController *)createNewChatWithCompletionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the controller created or error occurs.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The navigation view controller of create new chat.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/inviteClientWithCompletionHandler:" title="inviteClientWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/inviteClientWithCompletionHandler:">&ndash;&nbsp;inviteClientWithCompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoke Moxtra invite client flow</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable UINavigationController *)inviteClientWithCompletionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the controller created or error occurs.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The navigation view controller of invite new client.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/inviteInternalWithCompletionHandler:" title="inviteInternalWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/inviteInternalWithCompletionHandler:">&ndash;&nbsp;inviteInternalWithCompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoke Moxtra invite internal flow</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable UINavigationController *)inviteInternalWithCompletionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable errorOrNil ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the controller created or error occurs.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The navigation view controller of invite new internal.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="MEPWindow Methods" name="task_MEPWindow Methods"></a>
+						<h2 class="task-title">MEPWindow Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/showMEPWindow" title="showMEPWindow"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showMEPWindow">&ndash;&nbsp;showMEPWindow</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shows MEP window if hidden
+By default, the window level is UIWindowLevelDefault. After calling this API, you can change the window level by calling <code>[UIApplication sharedApplication].keyWindow.windowLevel = someLevel</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showMEPWindow</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showMEPWindowLite" title="showMEPWindowLite"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showMEPWindowLite">&ndash;&nbsp;showMEPWindowLite</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shows MEP window if hidden
+By default, the window level is UIWindowLevelDefault. After calling this API, you can change the window level by calling <code>[UIApplication sharedApplication].keyWindow.windowLevel = someLevel</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showMEPWindowLite</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideMEPWindow" title="hideMEPWindow"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideMEPWindow">&ndash;&nbsp;hideMEPWindow</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hides MEP window if in show state</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideMEPWindow</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dismissMEPWindow" title="dismissMEPWindow"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dismissMEPWindow">&ndash;&nbsp;dismissMEPWindow</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Kills the MEP window</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)dismissMEPWindow</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="OpenChat Methods" name="task_OpenChat Methods"></a>
+						<h2 class="task-title">OpenChat Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/openChat:withFeedSequence:completionHandler:" title="openChat:withFeedSequence:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openChat:withFeedSequence:completionHandler:">&ndash;&nbsp;openChat:withFeedSequence:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open chat with chat ID and scroll to the specified feed if present.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openChat:(NSString *)<em>chatID</em> withFeedSequence:(NSNumber *_Nullable)<em>feedSequence</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chatID</code></th>
+						<td><p>The chat to open</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>feedSequence</code></th>
+						<td><p>A string indicating the sequence of the scrolling target feed</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openRelationChatWithUniqueID:completionHandler:" title="openRelationChatWithUniqueID:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openRelationChatWithUniqueID:completionHandler:">&ndash;&nbsp;openRelationChatWithUniqueID:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open relation chat with peer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openRelationChatWithUniqueID:(NSString *)<em>peerUniqueID</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peerUniqueID</code></th>
+						<td><p>unique id of peer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openRelationChatWithEmail:completionHandler:" title="openRelationChatWithEmail:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openRelationChatWithEmail:completionHandler:">&ndash;&nbsp;openRelationChatWithEmail:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open relation chat with peer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openRelationChatWithEmail:(NSString *)<em>peerEmail</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peerEmail</code></th>
+						<td><p>email of peer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openLiveChatWithCompletion:" title="openLiveChatWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openLiveChatWithCompletion:">&ndash;&nbsp;openLiveChatWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open live support chat</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openLiveChatWithCompletion:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openServiceReqeustWithCompletion:" title="openServiceReqeustWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openServiceReqeustWithCompletion:">&ndash;&nbsp;openServiceReqeustWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open service request page, only for customer users.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openServiceReqeustWithCompletion:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openLiveChatWithChannelId:message:completion:" title="openLiveChatWithChannelId:message:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openLiveChatWithChannelId:message:completion:">&ndash;&nbsp;openLiveChatWithChannelId:message:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open live support chat with specific channel ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openLiveChatWithChannelId:(NSUInteger)<em>channelId</em> message:(NSString *_Nullable)<em>message</em> completion:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>channelId</code></th>
+						<td><p>The channel ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>A message which would be sent automatically once live chat opended, optional.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Notifications Methods" name="task_Notifications Methods"></a>
+						<h2 class="task-title">Notifications Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/registerNotificationWithDeviceToken:" title="registerNotificationWithDeviceToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerNotificationWithDeviceToken:">&ndash;&nbsp;registerNotificationWithDeviceToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the MEP SDK that Apple Push Services successfully completes the registration process.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerNotificationWithDeviceToken:(NSData *)<em>deviceToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceToken</code></th>
+						<td><p>Device token</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerNotificationWithDeviceToken:completionHandler:" title="registerNotificationWithDeviceToken:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerNotificationWithDeviceToken:completionHandler:">&ndash;&nbsp;registerNotificationWithDeviceToken:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Register device token to server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerNotificationWithDeviceToken:(NSData *)<em>deviceToken</em> completionHandler:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceToken</code></th>
+						<td><p>APNS device token or customized token with base64 encoding.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function requires a logged in user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerNotificationWithCustomizedToken:" title="registerNotificationWithCustomizedToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerNotificationWithCustomizedToken:">&ndash;&nbsp;registerNotificationWithCustomizedToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Save customized device token to Moxtra server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerNotificationWithCustomizedToken:(NSString *)<em>deviceToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceToken</code></th>
+						<td><p>customized token</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isMEPNotification:" title="isMEPNotification:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isMEPNotification:">&ndash;&nbsp;isMEPNotification:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Verify notification is from moxtra or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isMEPNotification:(NSDictionary *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>The notification dictionary</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>return YES means moxtra otherwise NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isBadgeNotification:" title="isBadgeNotification:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isBadgeNotification:">&ndash;&nbsp;isBadgeNotification:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Verify notification is a badge notification or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isBadgeNotification:(NSDictionary *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>The notification dictionary</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>return YES means it is a badge notification otherwise NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/parseRemoteNotification:completionHandler:" title="parseRemoteNotification:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/parseRemoteNotification:completionHandler:">&ndash;&nbsp;parseRemoteNotification:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Parse the notification to extract related info.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)parseRemoteNotification:(NSDictionary *)<em>userInfo</em> completionHandler:(void ( ^ ) ( NSError *_Nullable error , NSDictionary *_Nullable info ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>A dictionary that contains information related to the remote notification.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the action completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>the info argument of the completionHandler block may contain MEPNotificationMeetIDKey, MEPNotificationMeetStartedKey,  MEPNotificationChatIDKey, MEPNotificationFeedSequenceKey  as keys. For detail information, please refer to these constant declarations.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MEPClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2023 Moxtra. All rights reserved. Updated: 2023-03-21</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
