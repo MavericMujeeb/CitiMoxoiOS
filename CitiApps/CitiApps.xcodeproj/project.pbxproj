@@ -25,21 +25,24 @@
 		8DFBD2CE29756DD6006B0700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBD2CD29756DD6006B0700 /* AppDelegate.swift */; };
 		8DFBD2D229756DD6006B0700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBD2D129756DD6006B0700 /* ViewController.swift */; };
 		8DFBD2D729756DD8006B0700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFBD2D629756DD8006B0700 /* Assets.xcassets */; };
-		AEA7040529D711F800D92CED /* MEPSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA7040229D711F600D92CED /* MEPSDK.framework */; };
-		AEA7040D29D7128C00D92CED /* MoxoBridgeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA7040C29D7128C00D92CED /* MoxoBridgeHeader.m */; };
+		AE1E83D129DB70C800B504A1 /* MoxoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E83D029DB70C700B504A1 /* MoxoViewController.swift */; };
+		AEAE7D4329DB6C0B004CB1FE /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D3D29DB6C0A004CB1FE /* FlutterPluginRegistrant.xcframework */; };
+		AEAE7D4829DB6C14004CB1FE /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D3C29DB6C0A004CB1FE /* App.xcframework */; };
+		AEAE7D4929DB6C14004CB1FE /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D3C29DB6C0A004CB1FE /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEAE7D4A29DB6C16004CB1FE /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D4129DB6C0A004CB1FE /* Flutter.xcframework */; };
+		AEAE7D4B29DB6C16004CB1FE /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D4129DB6C0A004CB1FE /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEAE7D4C29DB6C1A004CB1FE /* path_provider_foundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D3E29DB6C0A004CB1FE /* path_provider_foundation.xcframework */; };
+		AEAE7D4D29DB6C1A004CB1FE /* path_provider_foundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D3E29DB6C0A004CB1FE /* path_provider_foundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEAE7D4E29DB6C1C004CB1FE /* shared_preferences_foundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D3F29DB6C0A004CB1FE /* shared_preferences_foundation.xcframework */; };
+		AEAE7D4F29DB6C1C004CB1FE /* shared_preferences_foundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D3F29DB6C0A004CB1FE /* shared_preferences_foundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEAE7D5029DB6C1E004CB1FE /* webview_flutter_wkwebview.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D4029DB6C0A004CB1FE /* webview_flutter_wkwebview.xcframework */; };
+		AEAE7D5129DB6C1E004CB1FE /* webview_flutter_wkwebview.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAE7D4029DB6C0A004CB1FE /* webview_flutter_wkwebview.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEBAF4FF29D5E70100A41914 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBAF4FE29D5E70100A41914 /* libxml2.tbd */; };
 		AEBAF50129D5E71500A41914 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBAF50029D5E71500A41914 /* libc++.tbd */; };
-		AEBFEA5F29D49110002BD9BC /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5929D49110002BD9BC /* FlutterPluginRegistrant.xcframework */; };
-		AEBFEA6429D49117002BD9BC /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5829D49110002BD9BC /* App.xcframework */; };
-		AEBFEA6529D49117002BD9BC /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5829D49110002BD9BC /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEBFEA6629D4911A002BD9BC /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5A29D49110002BD9BC /* Flutter.xcframework */; };
-		AEBFEA6729D4911A002BD9BC /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5A29D49110002BD9BC /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEBFEA6829D4911C002BD9BC /* path_provider_foundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5B29D49110002BD9BC /* path_provider_foundation.xcframework */; };
-		AEBFEA6929D4911C002BD9BC /* path_provider_foundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5B29D49110002BD9BC /* path_provider_foundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEBFEA6A29D4911F002BD9BC /* shared_preferences_foundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5C29D49110002BD9BC /* shared_preferences_foundation.xcframework */; };
-		AEBFEA6B29D4911F002BD9BC /* shared_preferences_foundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5C29D49110002BD9BC /* shared_preferences_foundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEBFEA6C29D49121002BD9BC /* webview_flutter_wkwebview.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5D29D49110002BD9BC /* webview_flutter_wkwebview.xcframework */; };
-		AEBFEA6D29D49121002BD9BC /* webview_flutter_wkwebview.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFEA5D29D49110002BD9BC /* webview_flutter_wkwebview.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEE1A03629DB247E006ABD44 /* MoxoBridgeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE1A03529DB247E006ABD44 /* MoxoBridgeHeader.m */; };
+		AEE1A03B29DB29B1006ABD44 /* MEPSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AEE1A03829DB29B0006ABD44 /* MEPSDKResource.bundle */; };
+		AEE1A03C29DB29B1006ABD44 /* ChatSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AEE1A03929DB29B0006ABD44 /* ChatSDKResource.bundle */; };
+		AEE1A03D29DB29B1006ABD44 /* MEPSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE1A03A29DB29B0006ABD44 /* MEPSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,11 +52,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AEBFEA6D29D49121002BD9BC /* webview_flutter_wkwebview.xcframework in Embed Frameworks */,
-				AEBFEA6729D4911A002BD9BC /* Flutter.xcframework in Embed Frameworks */,
-				AEBFEA6929D4911C002BD9BC /* path_provider_foundation.xcframework in Embed Frameworks */,
-				AEBFEA6B29D4911F002BD9BC /* shared_preferences_foundation.xcframework in Embed Frameworks */,
-				AEBFEA6529D49117002BD9BC /* App.xcframework in Embed Frameworks */,
+				AEAE7D5129DB6C1E004CB1FE /* webview_flutter_wkwebview.xcframework in Embed Frameworks */,
+				AEAE7D4B29DB6C16004CB1FE /* Flutter.xcframework in Embed Frameworks */,
+				AEAE7D4D29DB6C1A004CB1FE /* path_provider_foundation.xcframework in Embed Frameworks */,
+				AEAE7D4F29DB6C1C004CB1FE /* shared_preferences_foundation.xcframework in Embed Frameworks */,
+				AEAE7D4929DB6C14004CB1FE /* App.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,20 +86,21 @@
 		8DFBD2D629756DD8006B0700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DFBD2DB29756DD8006B0700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DFBD34729757A39006B0700 /* AppSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppSettings.xcconfig; sourceTree = "<group>"; };
-		AEA7040229D711F600D92CED /* MEPSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MEPSDK.framework; path = SDK/MEP_SDK_v8.9.2_230321/MEPSDK.framework; sourceTree = "<group>"; };
-		AEA7040329D711F700D92CED /* MEPSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MEPSDKResource.bundle; path = SDK/MEP_SDK_v8.9.2_230321/MEPSDKResource.bundle; sourceTree = "<group>"; };
-		AEA7040429D711F700D92CED /* ChatSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ChatSDKResource.bundle; path = SDK/MEP_SDK_v8.9.2_230321/ChatSDKResource.bundle; sourceTree = "<group>"; };
-		AEA7040A29D7128B00D92CED /* CitiApps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CitiApps-Bridging-Header.h"; sourceTree = "<group>"; };
-		AEA7040B29D7128C00D92CED /* MoxoBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoxoBridgeHeader.h; sourceTree = "<group>"; };
-		AEA7040C29D7128C00D92CED /* MoxoBridgeHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoxoBridgeHeader.m; sourceTree = "<group>"; };
+		AE1E83D029DB70C700B504A1 /* MoxoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoxoViewController.swift; sourceTree = "<group>"; };
+		AEAE7D3C29DB6C0A004CB1FE /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/Release/App.xcframework; sourceTree = "<group>"; };
+		AEAE7D3D29DB6C0A004CB1FE /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = Flutter/Release/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
+		AEAE7D3E29DB6C0A004CB1FE /* path_provider_foundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = path_provider_foundation.xcframework; path = Flutter/Release/path_provider_foundation.xcframework; sourceTree = "<group>"; };
+		AEAE7D3F29DB6C0A004CB1FE /* shared_preferences_foundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = shared_preferences_foundation.xcframework; path = Flutter/Release/shared_preferences_foundation.xcframework; sourceTree = "<group>"; };
+		AEAE7D4029DB6C0A004CB1FE /* webview_flutter_wkwebview.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = webview_flutter_wkwebview.xcframework; path = Flutter/Release/webview_flutter_wkwebview.xcframework; sourceTree = "<group>"; };
+		AEAE7D4129DB6C0A004CB1FE /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = Flutter/Release/Flutter.xcframework; sourceTree = "<group>"; };
 		AEBAF4FE29D5E70100A41914 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		AEBAF50029D5E71500A41914 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		AEBFEA5829D49110002BD9BC /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/Debug/App.xcframework; sourceTree = "<group>"; };
-		AEBFEA5929D49110002BD9BC /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = Flutter/Debug/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
-		AEBFEA5A29D49110002BD9BC /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = Flutter/Debug/Flutter.xcframework; sourceTree = "<group>"; };
-		AEBFEA5B29D49110002BD9BC /* path_provider_foundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = path_provider_foundation.xcframework; path = Flutter/Debug/path_provider_foundation.xcframework; sourceTree = "<group>"; };
-		AEBFEA5C29D49110002BD9BC /* shared_preferences_foundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = shared_preferences_foundation.xcframework; path = Flutter/Debug/shared_preferences_foundation.xcframework; sourceTree = "<group>"; };
-		AEBFEA5D29D49110002BD9BC /* webview_flutter_wkwebview.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = webview_flutter_wkwebview.xcframework; path = Flutter/Debug/webview_flutter_wkwebview.xcframework; sourceTree = "<group>"; };
+		AEE1A03429DB247E006ABD44 /* MoxoBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoxoBridgeHeader.h; sourceTree = "<group>"; };
+		AEE1A03529DB247E006ABD44 /* MoxoBridgeHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoxoBridgeHeader.m; sourceTree = "<group>"; };
+		AEE1A03729DB24AF006ABD44 /* CitiApps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CitiApps-Bridging-Header.h"; sourceTree = "<group>"; };
+		AEE1A03829DB29B0006ABD44 /* MEPSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MEPSDKResource.bundle; path = SDK/MEP_SDK_v8.9.2_230321/MEPSDKResource.bundle; sourceTree = "<group>"; };
+		AEE1A03929DB29B0006ABD44 /* ChatSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ChatSDKResource.bundle; path = SDK/MEP_SDK_v8.9.2_230321/ChatSDKResource.bundle; sourceTree = "<group>"; };
+		AEE1A03A29DB29B0006ABD44 /* MEPSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MEPSDK.framework; path = SDK/MEP_SDK_v8.9.2_230321/MEPSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +109,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBAF50129D5E71500A41914 /* libc++.tbd in Frameworks */,
-				AEA7040529D711F800D92CED /* MEPSDK.framework in Frameworks */,
+				AEAE7D4C29DB6C1A004CB1FE /* path_provider_foundation.xcframework in Frameworks */,
+				AEE1A03D29DB29B1006ABD44 /* MEPSDK.framework in Frameworks */,
+				AEAE7D5029DB6C1E004CB1FE /* webview_flutter_wkwebview.xcframework in Frameworks */,
+				AEAE7D4E29DB6C1C004CB1FE /* shared_preferences_foundation.xcframework in Frameworks */,
+				AEAE7D4829DB6C14004CB1FE /* App.xcframework in Frameworks */,
 				AEBAF4FF29D5E70100A41914 /* libxml2.tbd in Frameworks */,
-				AEBFEA6C29D49121002BD9BC /* webview_flutter_wkwebview.xcframework in Frameworks */,
-				AEBFEA6A29D4911F002BD9BC /* shared_preferences_foundation.xcframework in Frameworks */,
-				AEBFEA6629D4911A002BD9BC /* Flutter.xcframework in Frameworks */,
-				AEBFEA5F29D49110002BD9BC /* FlutterPluginRegistrant.xcframework in Frameworks */,
-				AEBFEA6829D4911C002BD9BC /* path_provider_foundation.xcframework in Frameworks */,
-				AEBFEA6429D49117002BD9BC /* App.xcframework in Frameworks */,
+				AEAE7D4A29DB6C16004CB1FE /* Flutter.xcframework in Frameworks */,
+				AEAE7D4329DB6C0B004CB1FE /* FlutterPluginRegistrant.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,13 +126,13 @@
 		8DFBD2C129756DD6006B0700 = {
 			isa = PBXGroup;
 			children = (
-				AEA7040B29D7128C00D92CED /* MoxoBridgeHeader.h */,
-				AEA7040C29D7128C00D92CED /* MoxoBridgeHeader.m */,
+				AEE1A03729DB24AF006ABD44 /* CitiApps-Bridging-Header.h */,
+				AEE1A03429DB247E006ABD44 /* MoxoBridgeHeader.h */,
+				AEE1A03529DB247E006ABD44 /* MoxoBridgeHeader.m */,
 				8DFBD34729757A39006B0700 /* AppSettings.xcconfig */,
 				8DFBD2CC29756DD6006B0700 /* CitiApps */,
 				8DFBD2CB29756DD6006B0700 /* Products */,
 				8DFBD30429757296006B0700 /* Frameworks */,
-				AEA7040A29D7128B00D92CED /* CitiApps-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,17 +169,17 @@
 		8DFBD30429757296006B0700 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AEA7040429D711F700D92CED /* ChatSDKResource.bundle */,
-				AEA7040229D711F600D92CED /* MEPSDK.framework */,
-				AEA7040329D711F700D92CED /* MEPSDKResource.bundle */,
+				AEAE7D3C29DB6C0A004CB1FE /* App.xcframework */,
+				AEAE7D4129DB6C0A004CB1FE /* Flutter.xcframework */,
+				AEAE7D3D29DB6C0A004CB1FE /* FlutterPluginRegistrant.xcframework */,
+				AEAE7D3E29DB6C0A004CB1FE /* path_provider_foundation.xcframework */,
+				AEAE7D3F29DB6C0A004CB1FE /* shared_preferences_foundation.xcframework */,
+				AEAE7D4029DB6C0A004CB1FE /* webview_flutter_wkwebview.xcframework */,
+				AEE1A03929DB29B0006ABD44 /* ChatSDKResource.bundle */,
+				AEE1A03A29DB29B0006ABD44 /* MEPSDK.framework */,
+				AEE1A03829DB29B0006ABD44 /* MEPSDKResource.bundle */,
 				AEBAF50029D5E71500A41914 /* libc++.tbd */,
 				AEBAF4FE29D5E70100A41914 /* libxml2.tbd */,
-				AEBFEA5829D49110002BD9BC /* App.xcframework */,
-				AEBFEA5A29D49110002BD9BC /* Flutter.xcframework */,
-				AEBFEA5929D49110002BD9BC /* FlutterPluginRegistrant.xcframework */,
-				AEBFEA5B29D49110002BD9BC /* path_provider_foundation.xcframework */,
-				AEBFEA5C29D49110002BD9BC /* shared_preferences_foundation.xcframework */,
-				AEBFEA5D29D49110002BD9BC /* webview_flutter_wkwebview.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,6 +187,7 @@
 		8DFBD3592976AB93006B0700 /* Marketplace */ = {
 			isa = PBXGroup;
 			children = (
+				AE1E83D029DB70C700B504A1 /* MoxoViewController.swift */,
 				8DA82EA52978047900A79D3B /* SearchViewController.swift */,
 				8DA82EA32978047400A79D3B /* ProfileViewController.swift */,
 				8DA82E9F2978046A00A79D3B /* LoginViewController.swift */,
@@ -258,8 +263,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE0D51D297FC16300201043 /* DashScene.storyboard in Resources */,
+				AEE1A03B29DB29B1006ABD44 /* MEPSDKResource.bundle in Resources */,
 				8DA82E982977FFD000A79D3B /* Main.storyboard in Resources */,
 				8DFBD2D729756DD8006B0700 /* Assets.xcassets in Resources */,
+				AEE1A03C29DB29B1006ABD44 /* ChatSDKResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +282,9 @@
 				8DE0D519297FB44E00201043 /* AppSettings.swift in Sources */,
 				8DFBD2D229756DD6006B0700 /* ViewController.swift in Sources */,
 				8DFBD2CE29756DD6006B0700 /* AppDelegate.swift in Sources */,
+				AE1E83D129DB70C800B504A1 /* MoxoViewController.swift in Sources */,
 				8D7016102982BE9100FDEBFC /* LoginViewModel.swift in Sources */,
-				AEA7040D29D7128C00D92CED /* MoxoBridgeHeader.m in Sources */,
+				AEE1A03629DB247E006ABD44 /* MoxoBridgeHeader.m in Sources */,
 				8DA82EA42978047400A79D3B /* ProfileViewController.swift in Sources */,
 				8DA82E9E2978046500A79D3B /* HomeViewController.swift in Sources */,
 				8DE0D51B297FC13800201043 /* DashViewController.swift in Sources */,
