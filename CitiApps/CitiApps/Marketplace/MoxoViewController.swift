@@ -51,7 +51,7 @@ class MoxoViewController : UIViewController{
         "\"org_id\":\"P07wuoEJ4K6BElaAJd6qwkC\"," +
         "\"email\":\"\(self.loginEmailId)\"" +
         "}"
-        print("Params ", parameters)
+        
         let fullUrl: String = "https://citiusdev04.moxo.com/v1/core/oauth/token"
         
         guard let url = try? URL(string: fullUrl) else {
@@ -72,7 +72,7 @@ class MoxoViewController : UIViewController{
                         let jsonResult = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String:Any]
                         if response.statusCode == 200 {
                             self.accessToken  = jsonResult?["access_token"] as! String
-                            print(self.accessToken)
+                            
                             self.mepClient.linkUser(withAccessToken: self.accessToken) { error in
                                 print("MEPClient handler->")
                                 print(error)
