@@ -31,6 +31,8 @@ class DashboardViewController : UIViewController {
     var handleExternalLinks: Bool!
     var meetingLink : String!
     
+    var loginUserEmail: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
@@ -112,7 +114,7 @@ class DashboardViewController : UIViewController {
         //Loading Market place tab from Flutter Module
         let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
         let flutterViewController = MoxoViewController(nibName: nil, bundle: nil)
-
+        flutterViewController.loginEmailId = self.loginUserEmail!
         flutterViewController.title = "Contact"
         flutterViewController.tabBarController?.hidesBottomBarWhenPushed = true
         

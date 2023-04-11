@@ -38,34 +38,34 @@ class ViewController : UIViewController {
         if(self.username.text == "" || self.password.text == "") {
             return
         }
-        if(users[self.username.text!]?["name"] == nil) {
-            let alert = UIAlertController(title: "User not found", message: "Please enter valid user credentials", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                switch action.style{
-                    case .default:
-                    self.dismiss(animated: true)
-                    case .cancel:
-                    self.dismiss(animated: true)
-                    
-                    case .destructive:
-                    self.dismiss(animated: true)
-                    
-                @unknown default:
-                    self.dismiss(animated: true)
-                }
-            }))
-            self.present(alert, animated: true, completion: nil)
-            return
-        }
+//        if(users[self.username.text!]?["name"] == nil) {
+//            let alert = UIAlertController(title: "User not found", message: "Please enter valid user credentials", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+//                switch action.style{
+//                    case .default:
+//                    self.dismiss(animated: true)
+//                    case .cancel:
+//                    self.dismiss(animated: true)
+//
+//                    case .destructive:
+//                    self.dismiss(animated: true)
+//
+//                @unknown default:
+//                    self.dismiss(animated: true)
+//                }
+//            }))
+//            self.present(alert, animated: true, completion: nil)
+//            return
+//        }
         
         //TODO:Setting this info globally, might change it later.
-        loggedInUser = self.username.text
-        userid = users[self.username.text!]?["userid"]
-        
-        var userInfo = UserInfoData(name: users[self.username.text!]?["name"], email: users[self.username.text!]?["email"], id: users[self.username.text!]?["userid"])
-        var data = try! JSONEncoder().encode(userInfo)
-        var userStr = String(data: data, encoding: .utf8)
-        flutterMethodChannel(passArgs: userStr);
+//        loggedInUser = self.username.text
+//        userid = users[self.username.text!]?["userid"]
+//
+//        var userInfo = UserInfoData(name: users[self.username.text!]?["name"], email: users[self.username.text!]?["email"], id: users[self.username.text!]?["userid"])
+//        var data = try! JSONEncoder().encode(userInfo)
+//        var userStr = String(data: data, encoding: .utf8)
+//        flutterMethodChannel(passArgs: userStr);
         
         if(handleExternalLinks == true){
 //            let teamsCallingViewController = TeamsCallingViewController()
@@ -75,10 +75,14 @@ class ViewController : UIViewController {
             let dashViewController = DashboardViewController(nibName: nil, bundle: nil)
             dashViewController.handleExternalLinks = true
             dashViewController.meetingLink = self.meetingLink
+            dashViewController.loginUserEmail = self.username.text
             self.navigationController?.pushViewController(dashViewController, animated: false)
         }
         else{
             let dashViewController = DashboardViewController(nibName: nil, bundle: nil)
+            dashViewController.handleExternalLinks = false
+            dashViewController.meetingLink = self.meetingLink
+            dashViewController.loginUserEmail = self.username.text
             self.navigationController?.pushViewController(dashViewController, animated: false)
         }
     }
