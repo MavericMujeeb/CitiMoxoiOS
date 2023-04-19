@@ -66,52 +66,48 @@ class MoxoViewController : UIViewController{
         
         let task = URLSession.shared.dataTask(with: request){
             data, urlResponse, error in
-            if let response = urlResponse as? HTTPURLResponse {
-                if let data = data {
-                    do {
-                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String:Any]
-                        if response.statusCode == 200 {
-                            self.accessToken  = jsonResult?["access_token"] as! String
-                            
-                            self.mepClient.linkUser(withAccessToken: self.accessToken) { error in
-                                print("MEPClient handler->")
-                                print(error)
-                                self.buildMoxoUI()
-                            }
-                        } else {
-                            DispatchQueue.main.async {
-                                let message = jsonResult?["message"] as! String
-                                let code = jsonResult?["code"] as! String
-                                let alert = UIAlertController(title: code, message: message, preferredStyle: .alert)
-                                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                                    CircleLoader.sharedInstance.hide()
-//                                    let dashBoardVC = DashboardViewController.init(nibName: nil, bundle: nil)
-//                                    self.navigationController?.pushViewController(dashBoardVC, animated: true)
-                                    switch action.style{
-                                    case .default:
-                                        self.dismiss(animated: true)
-                                    case .cancel:
-                                        self.dismiss(animated: true)
-                                        
-                                    case .destructive:
-                                        self.dismiss(animated: true)
-                                        
-                                    @unknown default:
-                                        self.dismiss(animated: true)
-                                    }
-                                }))
-                                self.present(alert, animated: true, completion: nil)
-                                return
-                            }
+            if let response = urlResponse as? HTTPURLResponse, let data = data {
+                do {
+                    let jsonResult = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String:Any]
+                    if response.statusCode == 200 {
+                        self.accessToken  = jsonResult?["access_token"] as! String
+                        
+                        self.mepClient.linkUser(withAccessToken: self.accessToken) { error in
+                            self.buildMoxoUI()
                         }
-                    } catch {
-                        //print("Server Error")
-                        //print("Error Code: \(error._code)")
-                        //print("Error Messsage: \(error.localizedDescription)")
-                        //if let str = String(data: data, encoding: String.Encoding.utf8){
-                        //print("Print Server data:- " + str)
-                        //}
+                    } else {
+                        DispatchQueue.main.async {
+                            let message = jsonResult?["message"] as! String
+                            let code = jsonResult?["code"] as! String
+                            let alert = UIAlertController(title: code, message: message, preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                                CircleLoader.sharedInstance.hide()
+                                let dashBoardVC = DashboardViewController.init(nibName: nil, bundle: nil)
+                                self.navigationController?.pushViewController(dashBoardVC, animated: true)
+                                switch action.style{
+                                case .default:
+                                    self.dismiss(animated: true)
+                                case .cancel:
+                                    self.dismiss(animated: true)
+                                    
+                                case .destructive:
+                                    self.dismiss(animated: true)
+                                    
+                                @unknown default:
+                                    self.dismiss(animated: true)
+                                }
+                            }))
+                            self.present(alert, animated: true, completion: nil)
+                            return
+                        }
                     }
+                } catch {
+                    //print("Server Error")
+                    //print("Error Code: \(error._code)")
+                    //print("Error Messsage: \(error.localizedDescription)")
+                    //if let str = String(data: data, encoding: String.Encoding.utf8){
+                    //print("Print Server data:- " + str)
+                    //}
                 }
             }
         }
